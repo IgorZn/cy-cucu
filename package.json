@@ -1,0 +1,21 @@
+{
+  "name": "cypresscucumber",
+  "version": "1.0.0",
+  "description": "Just to learn Cypress + cucu",
+  "main": "index.js",
+  "dependencies": {
+    "cosmiconfig": "^7.0.0",
+    "cypress": "^7.3.0",
+    "cypress-cucumber-preprocessor": "^4.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test:all": "cypress run --spec \"**/*.feature\" --browser firefox",
+    "cypress:ff-open": "npx cypress open --browser firefox"
+  },
+  "cypress-cucumber-preprocessor": {
+    "step_definitions": "cypress/support/step_definitions/"
+  },
+  "author": "",
+  "license": "ISC"
+}
